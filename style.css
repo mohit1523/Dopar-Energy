@@ -70,13 +70,47 @@ body {
 }
 
 .product-container{
-    width: 40vw;
-    display: flex;
+    width: 30vw;
     overflow: hidden;
+    display: flex;
+    position: relative;
+    border-radius: 1vw;
+    background-color: #FFFDFA;
+}
+
+.product-container > div{
+    transform: translateX(-30vw);
+    transition: 0.5s;
 }
 
 .product-container > div{
     width: 100%;
+}
+
+.product-container > div p{
+    padding: 2vh 2vw;
+}
+
+.pro-img{
+    width: 30vw;
+    transition: .5s;
+    background-color: #1E1C1C;
+}
+
+.pro-img:hover{
+    filter: blur(2px);
+}
+
+.pic-selector{
+    width: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pic-selector img{
+    width: 4vw;
+    border-radius: 50%;
+    border: 1px solid;
 }
 
 .proText h1{
