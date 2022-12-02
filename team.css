@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&family=Gafata&family=Major+Mono+Display&family=Monoton&family=Rajdhani:wght@300&family=Raleway:wght@200&family=Syncopate&display=swap');
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1c1c;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1E1C1C;
+    --secondary-color: #FF4545;
+    --accent-color: #FFFDFA;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    display: flex;
+    z-index: 5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 1vw;
+    background-color: var(--primary-color);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav>img {
+    max-width: 10vw;
+    height: 3vw;
+}
+
+
+/* Code for navbar button */
+#container {
+    height: 3vw;
+    width: 3vw;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+#sub-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    column-gap: 1vw;
+}
+
+#dot1,
+#dot2,
+#dot3 {
+    width: 0.34vw;
+    height: 0.34vw;
+    /* border: 1px solid; */
+    background: white;
+    border-radius: 100%;
+}
+
+#dash1,
+#dash2,
+#dash3 {
+    width: 2.5vw;
+    height: 0.2vw;
+    /* border: 0.1px solid white; */
+    background-color: white;
+}
+
+#dash1 {
+    position: relative;
+    /* animation: rotate1 0.5s ease 0.3s forwards; */
+}
+
+#dash3 {
+    position: relative;
+    /* animation: rotate2 0.5s ease  0.3s forwards; */
+}
+
+#dash2 {
+    position: relative;
+    /* animation: rotateDash2 0.3s ease forwards; */
+}
+
+
+
+@keyframes rotateDash2 {
+    0% {
+        right: 0vw;
+        top: 0;
+        opacity: 1;
+    }
+
+    100% {
+        right: 2vw;
+        top: 0.05vw;
+        opacity: 0;
+    }
+}
+
+@keyframes rerotateDash2 {
+    0% {
+        right: 2vw;
+        top: 0.05vw;
+        opacity: 0;
+    }
+
+    100% {
+        right: 0vw;
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes extentDash2NDot {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes reextentDash2NDot {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0deg);
+        top: 0vw;
+        left: 0vw;
+    }
+
+    100% {
+        transform: rotate(45deg);
+        top: 1vw;
+        right: 1.9vw;
+    }
+
+}
+
+@keyframes rerotate1 {
+
+
+    0% {
+        transform: rotate(45deg);
+        top: 1vw;
+        right: 1.9vw;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        top: 0vw;
+        left: 0vw;
+    }
+
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+        top: 0vw;
+        left: 0vw;
+    }
+
+    100% {
+        transform: rotate(-45deg);
+        bottom: 1vw;
+        right: 2vw;
+    }
+
+}
+
+@keyframes rerotate2 {
+
+
+    0% {
+        transform: rotate(-45deg);
+        bottom: 1vw;
+        right: 2vw;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        top: 0vw;
+        left: 0vw;
+    }
+
+}
+
+/* ENd right here */
+
+/* sidebar code */
+
+.sidebar {
+    background-color: var(--secondary-color);
+    position: fixed;
+    z-index: 6;
+    border-right: 1px solid var(--primary-color);
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: -30vw;
+    height: 100vh;
+    width: 25vw;
+    padding: 5vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transition: 0.5s;
+}
+
+.sidebar a {
+    padding: 2vh 2vw;
+    font-size: 3vw;
+    margin: 1vh;
+    font-family: 'Rajdhani';
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 900;
+    position: relative;
+}
+
+.sidebar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: var(--primary-color);
+    width: 0;
+    transition: 500ms;
+    border-radius: 2vw;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar a:hover::before {
+    width: 100%;
+}
+
+.curr-page {
+    border-radius: 2vw;
+    border: 1px solid #1E1C1C;
+}
+
+#heading {
+    color: white;
+    font-size: 3.5vw;
+    font-family: Raleway;
+}
+
+#team-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto ;
+    min-width: 100%;
+    height: 40vw;
+}
+
+#team-container>#team-subcontainer,#team-container2>#team-subcontainer, #advisory-section>#team-subcontainer{
+    background-color: #DFDFDF;
+    color: black;
+    min-width: 25%;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#team-container>#team-subcontainer1 , #team-container2 > #team-subcontainer1, #advisory-section > #team-subcontainer1{
+    background-color: #FF4545;
+    color: #DFDFDF;
+    text-align: center;
+    min-width: 25%;
+    height: 20vw;
+    font-size: 1.8vw;
+    font-family: 'Rajdhani';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    color: white;
+}
+
+#footer-text {
+    font-size: 1.1vw;
+    font-family: 'Rajdhani';
+}
+
+#footer-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#social-icons {
+    width: 3vw;
+    height: 3vw;
+}
+
+#team-container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#team-container2>#team-subcontainer{
+    min-width: 25%;
+}
+#team-container2>#team-subcontainer1{
+    min-width: 25%;
+}
+
+#advisory-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#advisory-section > #team-subcontainer1,  #advisory-section > #team-subcontainer{
+    min-width: 25%;
+}
+
+#supported-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#supported-section > img{
+    min-width: 8vw;
+    height: 8vw;
+}
+
+#line{
+    height: 0.05vw;
+    background-color: white;
+    margin-bottom: 1vw;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1vw;
+}

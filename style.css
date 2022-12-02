@@ -1,0 +1,190 @@
+/* IMPORT STATEMENTS */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+:root {
+    --primary-color: #1E1C1C;
+    --secondary-color: #FF4545;
+    --accent-color: #FFFDFA;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+
+/* CODE FOR INTRO VIDEO */
+
+.introVid {
+    background-color: #FFFDFA;
+    display: flex;
+    align-items: center;
+}
+
+.introVid>video {
+    margin: auto;
+    width: 50vw;
+}
+
+
+
+/* CODE FOR INTRO SECTION*/
+
+.intro-section {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+.intro-section>h1 {
+    font-size: 8vw;
+    padding: 4vh 0;
+    text-align: center;
+}
+
+.intro-section>h4 {
+    font-size: 2vw;
+    text-align: center;
+    padding: 2vh 0;
+}
+
+
+
+/* CODE FOR PRODUCTS SECTION */
+
+.product-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    padding: 15vh 2vw;
+    font-size: 1.2vw;
+    padding-bottom: 20vh;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+.product-container{
+    width: 40vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.product-container > div{
+    width: 100%;
+}
+
+.proText h1{
+    color: var(--accent-color);
+    font-size: 5vw;
+    text-align: center;
+}
+
+
+/* CODE FOR FEATURES SECTION */
+
+.features-section{
+    padding: 5vh 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feaText{
+    font-size: 5vw;
+    text-align: center;
+    width: 40vw;
+}
+
+.features{
+    width: 50vw;
+}
+
+.features > img{
+    width: 100%;
+    height: 50vh;
+    border: 1px solid;
+}
+
+.features > div{
+    width: 100%;
+    border: 1px solid;
+    border-top: none;
+    padding: 2vh 1vw;
+}
+
+
+
+/* CODE FOR FAQ SECTION */
+
+.faqs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
+    padding: 20vh 0;
+    box-shadow: 0 10px 10px black;
+}
+
+.faqText{
+    width: 40vw;
+    font-size: 5vw;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+.questions > details{
+    font-size: 1.2vw;
+    padding: 1vh 1vw;
+    font-weight: 900;
+    width: 50vw;
+    background-color: #FFFDFA;
+    margin-bottom: 2vh;
+}
+
+.questions summary{
+    margin: 1vh;
+}
+
+
+
+/* CODE FOR VISION AND MISSION SECTION */
+
+.vision{
+    display: flex;
+    padding: 10vh 2vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.vision > div{
+    width: 40%;
+}
+
+.vision h1{
+    font-size: 5vw;
+}
+
+
+/* CODE FOR FOOTER */
+
+footer{
+    background-color: var(--primary-color);
+    padding: 2vh 2vw;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img {
+    filter:invert();
+    height: 5vh;
+    margin: 0 1vw;
+}
