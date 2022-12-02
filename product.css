@@ -16,12 +16,12 @@
     width: 50vw;
 }
 
-.main-img{
+.main-img , .main-img2{
     width: 50vw;
+    height: 50vh;
 }
 
-
-.product img{
+.product-images > div img , .product-images2 > div img{
     width: 10vw;
 }
 
