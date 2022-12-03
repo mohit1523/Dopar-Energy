@@ -85,20 +85,19 @@ body {
 
 .product-container > div{
     width: 100%;
+    position: relative;
 }
 
-.product-container > div p{
-    padding: 2vh 2vw;
+.product-container > div h4  , .product-container > div h6{
+    text-align: center;
+    margin: 2vh 0;
+    font-size: 2vw;
 }
 
 .pro-img{
+    padding: 10px;
     width: 30vw;
     transition: .5s;
-    background-color: #1E1C1C;
-}
-
-.pro-img:hover{
-    filter: blur(2px);
 }
 
 .pic-selector{
@@ -110,7 +109,13 @@ body {
 .pic-selector img{
     width: 4vw;
     border-radius: 50%;
-    border: 1px solid;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pic-selector img:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .proText h1{
@@ -129,30 +134,26 @@ body {
     align-items: center;
 }
 
+.fea{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.fea img{
+    width: 5vw;
+    border-radius: .5vw;
+    margin-right: 1vw;
+    filter:brightness(-500) contrast(50);
+}
+
 .feaText{
     font-size: 5vw;
-    text-align: center;
     width: 40vw;
+    text-align: center;
 }
-
-.features{
-    width: 50vw;
-}
-
-.features > img{
-    width: 100%;
-    height: 50vh;
-    border: 1px solid;
-}
-
-.features > div{
-    width: 100%;
-    border: 1px solid;
-    border-top: none;
-    padding: 2vh 1vw;
-}
-
-
 
 /* CODE FOR FAQ SECTION */
 
@@ -199,6 +200,8 @@ body {
 
 .vision > div{
     width: 40%;
+    font-size: 2vw;
+    font-weight: 700;
 }
 
 .vision h1{
@@ -221,4 +224,10 @@ footer img {
     filter:invert();
     height: 5vh;
     margin: 0 1vw;
+    transition: .2s;
+}
+
+footer img:hover{
+    filter: none;
+    transform: rotateZ(-15deg);
 }
