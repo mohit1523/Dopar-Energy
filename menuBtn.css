@@ -45,7 +45,7 @@ nav {
     border-right: 1px solid var(--primary-color);
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
     top: 0;
-    left: -30vw;
+    left: -50vw;
     height: 100vh;
     width: 25vw;
     padding: 5vh 1vw;
@@ -100,6 +100,7 @@ nav {
     height: 3vw;
     width: 3vw;
     display: grid;
+    margin-right: 4vw;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
 }
@@ -114,8 +115,8 @@ nav {
 #dot1,
 #dot2,
 #dot3 {
-    width: 0.34vw;
-    height: 0.34vw;
+    width: .7vw;
+    aspect-ratio: 1/1;
     /* border: 1px solid; */
     background: white;
     border-radius: 100%;
@@ -124,8 +125,9 @@ nav {
 #dash1,
 #dash2,
 #dash3 {
-    width: 2.5vw;
-    height: 0.2vw;
+    width: 4vw;
+    height: .3vh;
+    margin-bottom: .3vh;
     /* border: 0.1px solid white; */
     background-color: white;
 }
@@ -176,21 +178,6 @@ nav {
 
 #menuBar a:hover::before{
     width: 100%;
-}
-
-
-@media screen and (max-width:500px) {
-    #sub-container {
-        display: grid;
-    }
-
-    #menuBar {
-        display: none;
-    }
-
-    .curr-page {
-        background-color: none;
-    }
 }
 
 
@@ -253,8 +240,8 @@ nav {
 
     100% {
         transform: rotate(45deg);
-        top: 1vw;
-        right: 1.9vw;
+        top: 1vh;
+        right: .8vw;
     }
 
 }
@@ -264,8 +251,8 @@ nav {
 
     0% {
         transform: rotate(45deg);
-        top: 1vw;
-        right: 1.9vw;
+        top: 1vh;
+        right: 1vw;
     }
 
     100% {
@@ -285,8 +272,8 @@ nav {
 
     100% {
         transform: rotate(-45deg);
-        bottom: 1vw;
-        right: 2vw;
+        bottom: .2vh;
+        right: 1vw;
     }
 
 }
@@ -296,8 +283,8 @@ nav {
 
     0% {
         transform: rotate(-45deg);
-        bottom: 1vw;
-        right: 2vw;
+        bottom: .2vh;
+        right: 1vw;
     }
 
     100% {
@@ -307,3 +294,42 @@ nav {
     }
 
 }
+
+/* CODE FOR RESPONSIVENESS */
+
+
+@media screen and (max-width:500px) {
+    
+    nav{
+        height: 5vh;
+    }
+
+    .logo{
+        height: 3vh;
+    }
+
+    #sub-container {
+        display: grid;
+    }
+
+    #menuBar {
+        display: none;
+    }
+
+    .curr-page {
+        background-color: transparent;
+    }
+
+    .sidebar{
+        width: 40vw;
+        padding: 0 2vw;
+    }
+
+    .sidebar a{
+        font-size: 5vw;
+        padding: 1vh 3vw;
+        margin: .5vh 0;
+    }
+    
+}
+
