@@ -150,9 +150,8 @@ input[type="button"]:hover{
     }
 
     .conform , .conInfo{
-        height: 40vh;
         width: 80vw;
-        padding: 2vh 3vw;
+        padding: 2vh 3vw 0 3vw;
     }
 
     .conform > h1 , .conInfo > h1{
@@ -167,6 +166,10 @@ input[type="button"]:hover{
         height: 3vh;
     }
 
+    input::placeholder , textarea{
+        font-size: 2vh;
+    }
+
     textarea{
         height: 15vh;
     }
@@ -176,16 +179,13 @@ input[type="button"]:hover{
         width: 30%;
     }
 
-    .conInfo{
-        height: 37vh;
-    }
-
     .conInfo img{
-        height: 4vh;
+        width: 5vw;
+        height: auto;
     }
 
     .conInfo > h1{
-        margin-bottom: 5vh;
+        margin-bottom: 3vh;
     }
 
     .topBox > div{
@@ -193,6 +193,6 @@ input[type="button"]:hover{
     }
 
     .media-links{
-        height: 10vh;
+        height: 5vh;
     }
 }
