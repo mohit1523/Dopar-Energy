@@ -256,7 +256,7 @@ nav > img{
 
 #main-container h2{
     position: absolute;
-    top: 12vw;
+    top: 18vw;
     font-size: 5.5vw;
     color: white;
     font-family: 'Big Shoulders Stencil Display', cursive;
@@ -265,11 +265,11 @@ nav > img{
 
 #main-container h5{
     position: absolute;
-    top: 29vw;
-    font-size: 1.5vw;
+    top: 34vw;
+    font-size: 1.3vw;
     color: #FF4545;
     font-family: 'Big Shoulders Stencil Display', cursive;
-    left: 75vw;
+    left: 78vw;
 }
 #article-section{
     color:rgb(230, 230, 230);
@@ -282,6 +282,12 @@ nav > img{
 
 #article-section > h4{
     font-size: 1.2vw;
+}
+
+#article-section > h4 > a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #FF4545;
 }
 footer{
     display: flex;
