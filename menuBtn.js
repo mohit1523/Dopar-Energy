@@ -11,7 +11,7 @@ function work(count) {
     let sBar = document.querySelector('.sidebar');
     console.log(count);
     if (count % 2 == 0) {
-        sBar.style.left = '0';
+        sBar.style.left = '0vw';
         dash2.style.animation = 'rotateDash2 0.2s ease forwards'
         dot1.style.animation = 'extentDash2NDot 0.2s ease  forwards'
         dot2.style.animation = 'extentDash2NDot 0.2s ease  forwards'
@@ -20,7 +20,7 @@ function work(count) {
         dash3.style.animation = 'rotate2 0.2s ease forwards';
     }
     else {
-        sBar.style.left = '-30vw';
+        sBar.style.left = '-50vw';
         dash1.style.animation = 'rerotate1 0.2s ease forwards';
         dash3.style.animation = 'rerotate2 0.2s ease forwards';
 
