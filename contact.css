@@ -42,6 +42,7 @@ input{
 
 .conform , .conInfo{
     width: 30vw;
+    max-height: 90%;
     border-radius: 2vw;
     padding: 2vh 2vw;
     background-color: white;
@@ -101,6 +102,11 @@ input[type="button"]:hover{
 
 .conInfo img{
     height: 5vh;
+    transition: .2s;
+}
+
+.conInfo img:hover{
+    transform: rotateZ(-15deg);
 }
 
 .conInfo > h1{
@@ -131,3 +137,62 @@ input[type="button"]:hover{
 }
 
 
+/* CODE FOR RESPONSIVENESS */
+
+@media screen and (max-width:500px) {
+
+    .contact{
+        flex-direction: column;
+    }
+
+    section{
+        padding: 2vh 2vw;
+    }
+
+    .conform , .conInfo{
+        height: 40vh;
+        width: 80vw;
+        padding: 2vh 3vw;
+    }
+
+    .conform > h1 , .conInfo > h1{
+        font-size: 6vw;
+    }
+
+    input,textarea{
+        margin-bottom: 1.5vh;
+    }
+
+    input{
+        height: 3vh;
+    }
+
+    textarea{
+        height: 15vh;
+    }
+
+    input[type="button"]{
+        height: 3vh;
+        width: 30%;
+    }
+
+    .conInfo{
+        height: 37vh;
+    }
+
+    .conInfo img{
+        height: 4vh;
+    }
+
+    .conInfo > h1{
+        margin-bottom: 5vh;
+    }
+
+    .topBox > div{
+        margin: 3vh 0;
+    }
+
+    .media-links{
+        height: 10vh;
+    }
+}
