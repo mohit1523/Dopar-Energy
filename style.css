@@ -63,6 +63,7 @@ body {
 
 /* CODE FOR PRODUCTS SECTION */
 
+
 .product-section {
     display: flex;
     align-items: center;
@@ -86,6 +87,9 @@ body {
 .product-container > div{
     transform: translateX(-30vw);
     transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product-container > div{
@@ -120,7 +124,23 @@ body {
 }
 
 .pic-selector img:hover{
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.product-container > div a{
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 2vw;
+    padding: 1vh 1vw;
+    margin: 1vh;
+    border-radius: .5vw;
+    transition: .1s;
+}
+
+.product-container > div a:hover{
+    box-shadow: .2vh .2vw 0px rgb(0, 0, 0);
 }
 
 .proText h1{
@@ -151,8 +171,8 @@ body {
     width: 5vw;
     border-radius: .5vw;
     margin-right: 1vw;
-    filter:brightness(-500) contrast(50);
 }
+
 
 .feaText{
     font-size: 5vw;
@@ -185,11 +205,15 @@ body {
     font-weight: 900;
     width: 50vw;
     background-color: #FFFDFA;
+    background-color: var(--secondary-color);
     margin-bottom: 2vh;
 }
 
 .questions summary{
     margin: 1vh;
+    color: var(--accent-color);
+    font-weight: 900;
+    font-size: 1.5vw;
 }
 
 
@@ -236,3 +260,7 @@ footer img:hover{
     filter: none;
     transform: rotateZ(-15deg);
 }
+
+
+/* CODE FOR RESPONSIVENESS */
+
