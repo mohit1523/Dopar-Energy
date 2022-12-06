@@ -136,7 +136,7 @@ body {
     padding: 1vh 1vw;
     margin: 1vh;
     border-radius: .5vw;
-    transition: .1s;
+    transition: .2s;
 }
 
 .product-container > div a:hover{
