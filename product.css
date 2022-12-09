@@ -107,6 +107,7 @@
     display: flex;
     align-items: center;
     margin: 1vh 0;
+    font-size: 1.7vw;
 }
 
 .specsList img{
