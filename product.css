@@ -1,9 +1,20 @@
+/* IMPORT */
+
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Rajdhani' , sans-serif;
+    font-weight: 600;
     box-sizing: border-box;
 }
+
+:root {
+    --primary-color: #1E1C1C;
+    --secondary-color: #FF4545;
+    --accent-color: #FFFDFA;
+}
+
 
 
 /* CODE FOR PRODUCT SECTION */
@@ -13,22 +24,110 @@
 }
 
 .product > div{
+    padding: 5vh 2vw;
     width: 50%;
-    padding: 2vh 0vw;
+}
+
+.product-images , product-images2{
+    background-color: var(--accent-color);
 }
 
 .main-img , .main-img2{
     width: 45vw;
     aspect-ratio: 4/3;
+    overflow: hidden;
 }
 
 .product-images > div img , .product-images2 > div img{
     width: 10vw;
+    transition: .3s;
+    border-radius: 1vw;
 }
 
 .product-images > div , .product-images2 > div{
     display: flex;
     justify-content: space-evenly;
+}
+
+
+
+/* CODE FOR PRODUCT DETAILS */
+
+
+
+.product-details{
+    padding: 5vh 5vw;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.product-details > h1{
+    font-size: 4vw;
+    position: relative;
+    padding: 2vh 2vw;
+    width: fit-content;
+    font-family: 'Felix Titling' , sans-serif;
+    background-color: var(--accent-color);
+    border-radius: 1vw;
+    margin-bottom: 5vh;
+    transition: .2s;
+}
+
+.product-details > h1:hover{
+    box-shadow: 0px 0px 5px black inset;
+}
+
+.sub-heading{
+    font-size: 3vw;
+}
+
+.range-box{
+    width: fit-content;
+    padding: 2vh 2vw;
+    margin: 2vh 0;
+    font-size: 2vw;
+    position: relative;
+}
+
+.range-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1%;
+    height: 100%;
+    background-color: #FFFDFA;
+}   
+
+.specTit{
+    font-size: 2.5vw;
+}
+
+.specsList li{
+    display: flex;
+    align-items: center;
+    margin: 1vh 0;
+}
+
+.specsList img{
+    width: 5vw;
+    margin-right: 1vw;
+}
+
+.product-details a{
+    text-decoration: none;
+    color: var(--primary-color);
+    display: block;
+    margin: 5vh 0;
+    background-color: var(--accent-color);
+    width: fit-content;
+    padding: 1vh 1vw;
+    transition: .2s;
+}
+
+.product-details a:hover{
+    box-shadow: .3vh .3vw 0 var(--primary-color);
+    text-decoration: underline;
 }
 
 /* CODE FOR FOOTER */
@@ -48,4 +147,9 @@ footer img {
     filter:invert();
     height: 4vh;
     margin: 0 1vw;
+    transition: .2s;
+}
+
+footer img:hover{
+    transform: rotateZ(-15deg) scale(1.1);
 }
