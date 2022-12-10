@@ -317,7 +317,7 @@ footer {
     justify-content: space-between;
 }
 
-#social-icons {
+#social-icons{
     width: 3vw;
     height: 3vw;
 }
@@ -364,4 +364,24 @@ footer {
     width: 100%;
     margin: auto;
     margin-bottom: 1vw;
+}
+
+/* profile image sizing */
+#profile{
+    min-width: 10vw;
+    height: 10vw;
+}
+#profile1{
+    min-width: 13vw;
+    height: 13vw;
+}
+
+#team-subcontainer > span{
+    display: flex;
+    justify-content: space-around;
+}
+
+#team-subcontainer:hover{
+    filter: blur(0.65px);
+    -webkit-filter: blur(0.65px);
 }
