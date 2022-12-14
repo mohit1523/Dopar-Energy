@@ -1,9 +1,9 @@
-
+/* 
 :root {
     --primary-color: #1E1C1C;
-    --secondary-color: #FF4545;
+    --secondary-color: #81D959;
     --accent-color: #FFFDFA;
-}
+} */
 
 
 *{
@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color: var(--primary-color);
+    background-color: #1E1C1C;
 }
 
 section{
@@ -32,7 +32,7 @@ section::before{
     bottom: -35%;
     z-index: -2;
     transform: rotate(-20deg);
-    background: var(--secondary-color);
+    background: #FFFDFA;
 }
 
 input{
@@ -44,13 +44,14 @@ input{
     max-height: 90%;
     border-radius: 2vw;
     padding: 2vh 2vw;
-    background-color: white;
+    background-color: #FFFDFA;
+    border: 3px solid #81D959;
 }
 
 .conform > h1 , .conInfo > h1{
     font-size: 3vw;
     margin-bottom: 3vh;
-    font-family: 'felix titling' , 'sans-serif';
+    font-family: 'felix titling' , cursive;
     font-weight: 900;
 }
 
@@ -62,13 +63,13 @@ input,textarea{
     width: 100%;
     padding: 5px 5px;
     margin-bottom: 2vh;
-    border: 1px solid var(--primary-color);
+    border: 1px solid #1E1C1C;
     border-radius: .5vw;
-    transition: .5s;
+    transition: .2s;
 }
 
 input:focus,textarea:focus{
-    outline-color: var(--secondary-color);
+    outline-color: #81D959;
 }
 
 input{
@@ -82,14 +83,14 @@ input[type="button"]{
     outline: none;
     border: none;
     color: #F2F2F2;
-    background-color: var(--secondary-color);
+    background-color: #81D959;
     transition: all 150ms ease-in;
     font-weight: 900;
     font-size: 1.75vw;
 }
 
 input[type="button"]:hover{
-    background-color: #c23434;
+    background-color: #53b327;
     box-shadow: 1px 1px 4px black;
     cursor: pointer;
 }
