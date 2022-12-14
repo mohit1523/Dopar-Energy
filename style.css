@@ -14,14 +14,14 @@
     color: var(--secondary-color);
 }
 
-:root {
+/* :root {
     --primary-color: #1E1C1C;
-    --secondary-color: #FF4545;
+    --secondary-color: #81D959;
     --accent-color: #FFFDFA;
-}
+} */
 
 body {
-    background-color: var(--secondary-color);
+    background-color: #fffdfa;
 }
 
 
@@ -35,7 +35,7 @@ body {
 
 .introVid>video {
     margin: auto;
-    width: 50vw;
+    width: 70vw;
 }
 
 
@@ -43,8 +43,8 @@ body {
 /* CODE FOR INTRO SECTION*/
 
 .intro-section {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
+    background-color: #1E1C1C;
+    color: #FFFDFA;
 }
 
 .intro-section>h1 {
@@ -68,7 +68,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--primary-color);
+    background-color: #1E1C1C;
     padding: 15vh 2vw;
     font-size: 1.2vw;
     padding-bottom: 20vh;
@@ -118,7 +118,7 @@ body {
 .pic-selector img{
     width: 4vw;
     border-radius: 50%;
-    border: 1px solid var(--primary-color);
+    border: 1px solid #1E1C1C;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -128,9 +128,9 @@ body {
 }
 
 .product-container > div a{
-    background-color: var(--secondary-color);
+    background-color: #81D959;
     text-decoration: none;
-    color: var(--primary-color);
+    color: #1E1C1C;
     font-weight: 900;
     font-size: 2vw;
     padding: 1vh 1vw;
@@ -144,11 +144,86 @@ body {
 }
 
 .proText h1{
-    color: var(--accent-color);
+    color: #FFFDFA;
     font-size: 5vw;
     text-align: center;
 }
 
+.product-details{
+    width: 50vw;
+    color: #FFFDFA;
+}
+
+.product-details > h1{
+    font-size: 4vw;
+    position: relative;
+    padding: 2vh 2vw;
+    width: fit-content;
+    font-family: 'Felix Titling' , cursive;
+    background-color: #FFFDFA;
+    color: #81D959;
+    border-radius: 1vw;
+    margin-bottom: 2vh;
+    transition: .2s;
+}
+
+.product-details > h1:hover{
+    box-shadow: 0px 0px 5px black inset;
+}
+
+.sub-heading{
+    font-size: 3vw;
+}
+
+.range-box{
+    width: fit-content;
+    padding: 2vh 2vw;
+    margin: 2vh 0;
+    font-size: 2vw;
+    position: relative;
+}
+
+.range-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1%;
+    height: 100%;
+    background-color: #81D959;
+}   
+
+.specTit{
+    font-size: 2.5vw;
+}
+
+.specsList li{
+    display: flex;
+    align-items: center;
+    margin: 1vh 0;
+    font-size: 1.7vw;
+}
+
+.specsList img{
+    width: 5vw;
+    margin-right: 1vw;
+}
+
+.product-details a{
+    text-decoration: none;
+    color: var(--primary-color);
+    display: block;
+    margin: 5vh 0;
+    background-color: var(--accent-color);
+    width: fit-content;
+    padding: 1vh 1vw;
+    transition: .2s;
+}
+
+.product-details a:hover{
+    box-shadow: .3vh .3vw 0 var(--primary-color);
+    text-decoration: underline;
+}
 
 /* CODE FOR FEATURES SECTION */
 
@@ -186,7 +261,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--primary-color);
+    background-color: #1E1C1C;
     clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
     padding: 20vh 0;
     box-shadow: 0 10px 10px black;
@@ -195,7 +270,7 @@ body {
 .faqText{
     width: 40vw;
     font-size: 5vw;
-    color: var(--accent-color);
+    color: #FFFDFA;
     text-align: center;
 }
 
@@ -204,14 +279,13 @@ body {
     padding: 1vh 1vw;
     font-weight: 900;
     width: 50vw;
-    background-color: #FFFDFA;
-    background-color: var(--secondary-color);
+    background-color: #81D959;
     margin-bottom: 2vh;
 }
 
 .questions summary{
     margin: 1vh;
-    color: var(--accent-color);
+    color: #FFFDFA;
     font-weight: 900;
     font-size: 1.5vw;
 }
@@ -220,30 +294,58 @@ body {
 
 /* CODE FOR VISION AND MISSION SECTION */
 
-.vision{
-    display: flex;
+.about-sec{
+    font-size: 1.7vw;
+    padding: 5vh 0;
+}
+
+.about-sec h1{
+    position: relative;
+    padding: 1vh 2vw;
+    margin-bottom: 1vh;
+    font-family: 'Felix Titling' , cursive;
+}
+
+.about-sec h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: .3vw;
+    background-color: #81D959;
+}
+
+.about1{
     padding: 10vh 2vw;
-    align-items: center;
-    justify-content: space-around;
 }
 
-.vision > div{
-    width: 40%;
-    font-size: 2vw;
-    font-weight: 700;
-}
-
-.vision h1{
+.about1 > h1{
     font-size: 5vw;
 }
+
+.vis-mis > div{
+    width: 40vw;
+}
+
+.vis-mis{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.vis-mis h1{
+    font-size: 5vw;
+}
+
 
 
 /* CODE FOR FOOTER */
 
 footer{
-    background-color: var(--primary-color);
+    background-color: #1E1C1C;
     padding: 2vh 2vw;
-    color: var(--accent-color);
+    color: #FFFDFA;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -257,7 +359,6 @@ footer img {
 }
 
 footer img:hover{
-    filter: none;
     transform: rotateZ(-15deg);
 }
 
