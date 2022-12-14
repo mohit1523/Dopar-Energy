@@ -12,7 +12,7 @@ body{
 
 :root {
     --primary-color: #1E1C1C;
-    --secondary-color: #FF4545;
+    --secondary-color: #81D959;
     --accent-color: #FFFDFA;
 }
 
@@ -250,7 +250,7 @@ nav > img{
 #main-container img{
     position: relative;
     width: 100%;
-    height: 45vw;
+    height: 48vw;
 }
 
 
@@ -267,7 +267,7 @@ nav > img{
     position: absolute;
     top: 34vw;
     font-size: 1.3vw;
-    color: #FF4545;
+    color: #81D959;
     font-family: 'Big Shoulders Stencil Display', cursive;
     left: 78vw;
 }
@@ -287,7 +287,7 @@ nav > img{
 #article-section > h4 > a{
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #FF4545;
+    color: #81D959;
 }
 footer{
     display: flex;
@@ -298,9 +298,9 @@ footer{
     color: white;
 }
 
-h3{
+h3, #vision1 > h1, #vision2 > h1{
     font-size: 2.5vw;
-    color: #FF4545;
+    color: #81D959;
     font-family: 'Rajdhani', sans-serif;
     text-align: center;
 }
@@ -318,9 +318,18 @@ h3{
     padding: 2vw;
 }
 
+#last-container:hover{
+    box-shadow: .6vh .3vw 0 rgba(255, 255, 255, 0.349);
+}
+
 #last-container > div > img{
     width: 6vw;
     height: 6vw;
+    transition: 0.6s;
+}
+
+#last-container > div > img:hover{
+    transform: rotateY(180deg) scale(1.2);
 }
 
 #last-container > div > h4{
@@ -342,4 +351,25 @@ h3{
 #social-icons{
     width: 3vw;
     height: 3vw;
+    transition: 0.2s;
+}
+
+#social-icons:hover{
+    filter: none;
+    transform: rotateZ(-15deg)
+}
+
+.vision{
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    height: 15vw;
+}
+
+#vision2 > ul > li, #vision1 > p{
+    color: var(--accent-color);
+    text-decoration: none;
+    font-family: 'Rajdhani';
+    font-weight: 800;
+    padding: 0.28vw;
 }
