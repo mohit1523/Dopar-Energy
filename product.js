@@ -34,15 +34,15 @@ let proBtns2 = document.querySelectorAll('.product-images2 > div img');
 
 proBtns2.forEach(element => {
     element.addEventListener('mouseenter' , () => {
-        element.style.boxShadow = '5px 5px 10px rgba(0, 0, 0, 0.5)'
+        element.style.boxShadow = '5px 5px 10px rgba(0, 0, 0, 0.5)';
     })
 
     element.addEventListener('mouseleave' , () => {
-        element.style.boxShadow = 'none'
+        element.style.boxShadow = 'none';
     })
 
     element.addEventListener('mousedown' , () => {
-        element.style.boxShadow = '5px 5px 10px rgba(0, 0, 0, 0.5) inset'
+        element.style.boxShadow = '5px 5px 10px rgba(0, 0, 0, 0.5) inset';
     })
 
     element.addEventListener('click' , () => {
