@@ -285,8 +285,8 @@ nav>img {
 }
 
 #team-container>#team-subcontainer1 , #team-container2 > #team-subcontainer1, #advisory-section > #team-subcontainer1{
-    background-color: #FF4545;
-    color: #DFDFDF;
+    background-color: #81D959;
+    color: #1E1C1C;
     text-align: center;
     min-width: 25%;
     height: 20vw;
@@ -296,6 +296,13 @@ nav>img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#team-subcontainer1 > h5{
+    font-size: 1.1vw;
+}
+#team-subcontainer1 > h3{
+    font-size: 2.7vw;
 }
 
 footer {
@@ -320,6 +327,12 @@ footer {
 #social-icons{
     width: 3vw;
     height: 3vw;
+    transition: 0.2s;
+}
+
+#social-icons:hover{
+    filter: none;
+    transform: rotateZ(-15deg)
 }
 
 #team-container2{
@@ -381,7 +394,7 @@ footer {
     justify-content: space-around;
 }
 
-#team-subcontainer:hover{
+/* #team-subcontainer:hover{
     filter: blur(0.65px);
     -webkit-filter: blur(0.65px);
-}
+} */
