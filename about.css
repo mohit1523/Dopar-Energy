@@ -367,6 +367,7 @@ h3, #vision1 > h1, #vision2 > h1{
 }
 
 #vision2 > ul > li, #vision1 > p{
+    font-size: 1.2vw;
     color: var(--accent-color);
     text-decoration: none;
     font-family: 'Rajdhani';
