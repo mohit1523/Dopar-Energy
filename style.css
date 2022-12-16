@@ -185,10 +185,11 @@ body {
 
 .range-box::before{
     content: '';
+    border-radius: 10vw 0 0 10vw;
     position: absolute;
     top: 0;
     left: 0;
-    width: 1%;
+    width: 2%;
     height: 100%;
     background-color: #81D959;
 }   
@@ -230,31 +231,80 @@ body {
 .features-section{
     padding: 5vh 4vw;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-evenly;
 }
 
-.fea{
+.features-section > div{
+    width: 40vw;
+}
+
+.specsList2{
+    list-style: none;
+}
+
+.specsList2 li{
+    margin: 1vh 0;
+    font-size: 1.7vw;
     display: flex;
     align-items: center;
-    margin-bottom: 1vh;
-    font-size: 2vw;
-    font-weight: 700;
 }
 
-.fea img{
+.specsList2 img{
+    width: 7vw;
+}
+
+.specsList2 img{
     width: 5vw;
-    border-radius: .5vw;
+    border: 1px solid #1E1C1C;
     margin-right: 1vw;
 }
 
-
-.feaText{
-    font-size: 5vw;
-    width: 40vw;
-    text-align: center;
+.product-details2 a{
+    text-decoration: none;
+    color: #1E1C1C;
+    font-weight: 900;
+    display: block;
+    margin: 5vh 0;
+    background-color: #81D959;
+    width: fit-content;
+    padding: 1vh 1vw;
+    transition: .2s;
 }
 
+.product-details2 a:hover{
+    box-shadow: .3vh .3vw 0 #1E1C1C;
+    text-decoration: underline;
+}
+
+.product-images{
+    border: 6px double #81D959;
+}
+
+.product-images > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.product-images > div > div{
+    width: 30%;
+}
+
+.product-images > div img{
+    display: block;
+    width: 100%;
+    transition: .2s;
+}
+
+.product-images > div img:hover{
+    transform: scale(1.2);
+}
+
+.main-img{
+    width: 100%;
+}
 /* CODE FOR FAQ SECTION */
 
 .faqs{
@@ -285,7 +335,7 @@ body {
 
 .questions summary{
     margin: 1vh;
-    color: #FFFDFA;
+    color: #1E1C1C;
     font-weight: 900;
     font-size: 1.5vw;
 }
@@ -345,14 +395,13 @@ body {
 footer{
     background-color: #1E1C1C;
     padding: 2vh 2vw;
-    color: #FFFDFA;
+    color: #81D959;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 footer img {
-    filter:invert();
     height: 5vh;
     margin: 0 1vw;
     transition: .2s;
