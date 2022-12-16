@@ -306,12 +306,15 @@ nav>img {
 }
 
 footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #FFFDFA;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 2vw;
-    margin-right: 2vw;
     color: white;
+    padding: 0 5vw;
 }
 
 #footer-text {
