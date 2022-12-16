@@ -145,7 +145,6 @@ footer{
 }
 
 footer img {
-    filter:invert();
     height: 4vh;
     margin: 0 1vw;
     transition: .2s;
