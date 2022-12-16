@@ -35,3 +35,15 @@ document.getElementById('pic6').addEventListener("click" , () => {
         element.style.transform = 'translateX(-30vw)';
     });
 })
+
+
+//CODE FOR PRODUCT IMAGES VIEWER
+
+let mainImg = document.querySelector('.main-img')
+let proBtns = document.querySelectorAll('.product-images > div img');
+
+proBtns.forEach(element => {
+    element.addEventListener('click' , () => {
+        mainImg.src = element.src;
+    })
+});
