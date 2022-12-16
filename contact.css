@@ -27,9 +27,9 @@ section{
 section::before{
     content: '';
     position: absolute;
-    height: 70vh;
+    height: 100vh;
     width: 200vw;
-    bottom: -35%;
+    bottom: -65%;
     z-index: -2;
     transform: rotate(-20deg);
     background: #FFFDFA;
@@ -46,6 +46,7 @@ input{
     padding: 2vh 2vw;
     background-color: #FFFDFA;
     border: 3px solid #81D959;
+    font-size: 2vw;
 }
 
 .conform > h1 , .conInfo > h1{
@@ -76,20 +77,21 @@ input{
     height: 6vh;
 }
 
-input[type="button"]{
+input[type="submit"]{
     padding: 0;
     height: 6vh;
-    width: 50%;
+    width: 100%;
     outline: none;
     border: none;
-    color: #F2F2F2;
+    color: #1E1C1C;
     background-color: #81D959;
     transition: all 150ms ease-in;
-    font-weight: 900;
-    font-size: 1.75vw;
+    font-weight: 700;
+    font-size: 2vw;
+    font-family: 'Rajdhani' , cursive;
 }
 
-input[type="button"]:hover{
+input[type="submit"]:hover{
     background-color: #53b327;
     box-shadow: 1px 1px 4px black;
     cursor: pointer;
@@ -137,9 +139,37 @@ input[type="button"]:hover{
 }
 
 
+.join-btn{
+    background-color: #81D959;
+    font-weight: 700;
+    color: #1E1C1C;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Rajdhani' , cursive;
+    font-size: 2vw;
+    padding: 2vh 0;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vw;
+}
+
+.join-btn img{
+    height: 5vh;
+    margin-right: 1vw;
+}
+
+.join-btn:hover{
+    box-shadow: 0 0 15px #53b327 inset;
+}
+
+
 /* CODE FOR RESPONSIVENESS */
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:650px) {
 
     .contact{
         flex-direction: column;
@@ -174,9 +204,10 @@ input[type="button"]:hover{
         height: 15vh;
     }
 
-    input[type="button"]{
+    input[type="submit"]{
         height: 3vh;
-        width: 30%;
+        width: 100%;
+        font-size: 4vw;
     }
 
     .conInfo img{
@@ -194,5 +225,13 @@ input[type="button"]:hover{
 
     .media-links{
         height: 5vh;
+    }
+    .join-btn{
+        font-size: 4vw;
+        padding: 1vh 0;
+        margin-bottom: 1vh;
+    }
+    .join-btn img{
+        height: 2vh;
     }
 }
