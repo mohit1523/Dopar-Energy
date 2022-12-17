@@ -14,7 +14,7 @@ nav {
     position: sticky;
     top: 0;
     left: 0;
-    height: 10vh;
+    height: 5vh;
     display: flex;
     z-index: 5;
     justify-content: space-between;
@@ -25,7 +25,7 @@ nav {
 }
 
 .logo {
-    height: 6vh;
+    height: 4vh;
     filter: brightness(60);
 }
 
@@ -146,7 +146,7 @@ nav {
     position: relative;
     text-decoration: none;
     color: #fffdfa;
-    padding: 1vh 1.5vw;
+    padding: 0.5vh 1.5vw;
     font-size: 2vw;
     overflow: hidden;
 }
@@ -170,12 +170,14 @@ nav {
 
 .curr-page {
     border-radius: 2vw;
-    background-color: #81D959;
-    border: 1px solid #1E1C1C;
-    transition: .5s;
+    /* background-color: #81D959; */
+    outline: 1px solid #fffdfa;
+    transition: .5s 1s;
 }
 
-
+.curr-page:hover{
+    outline: none;
+}
 
 /* ANIMATION KEYFRAMES */
 
@@ -237,7 +239,7 @@ nav {
     100% {
         transform: rotate(45deg);
         top: 1vh;
-        right: .8vw;
+        right: .9vw;
     }
 
 }
@@ -248,7 +250,7 @@ nav {
     0% {
         transform: rotate(45deg);
         top: 1vh;
-        right: 1vw;
+        right: .9vw;
     }
 
     100% {
@@ -269,6 +271,7 @@ nav {
     100% {
         transform: rotate(-45deg);
         bottom: .2vh;
+        /* top: 1vh; */
         right: 1vw;
     }
 
@@ -294,14 +297,14 @@ nav {
 /* CODE FOR RESPONSIVENESS */
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:650px) {
     
     nav{
-        height: 5vh;
+        height: 2vh;
     }
 
     .logo{
-        height: 3vh;
+        height: 2vh;
     }
 
     #sub-container {
@@ -314,6 +317,11 @@ nav {
 
     .curr-page {
         background-color: transparent;
+        outline: 1px solid #1E1C1C;
+    }
+
+    .curr-page:hover{
+        outline: 1px solid #1E1C1C;
     }
 
     .sidebar{
