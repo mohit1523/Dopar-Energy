@@ -5,7 +5,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Rajdhani', sans-serif;
 }
 
@@ -278,7 +277,7 @@ body {
 }
 
 .product-images{
-    border: 6px double #81D959;
+    border: 1px solid #81D959;
 }
 
 .product-images > div{
