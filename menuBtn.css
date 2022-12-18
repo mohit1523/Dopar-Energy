@@ -8,6 +8,19 @@
         font-family: 'Rajdhani', sans-serif;
     }
 
+
+    body::-webkit-scrollbar{
+        width: 1vw;
+    }
+    body::-webkit-scrollbar-track{
+        background-color: #E4E4E4;
+    }
+    body::-webkit-scrollbar-thumb{
+        background-color: #81D959;
+        border-radius: 50vw;
+    }
+
+
     /* CODE FOR NAVBAR */
 
     nav {
@@ -151,7 +164,7 @@
         overflow: hidden;
     }
 
-    #menuBar a::before{
+    #menuBar a::before {
         content: '';
         position: absolute;
         top: 0;
@@ -164,7 +177,7 @@
         transition: 0.5s .2s;
     }
 
-    #menuBar a:hover::before{
+    #menuBar a:hover::before {
         width: 100%;
     }
 
@@ -175,7 +188,7 @@
         transition: .5s 1s;
     }
 
-    .curr-page:hover{
+    .curr-page:hover {
         outline: none;
     }
 
@@ -298,12 +311,11 @@
 
 
     @media screen and (max-width:650px) {
-        
-        nav{
+        nav {
             height: 2vh;
         }
 
-        .logo{
+        .logo {
             height: 2vh;
         }
 
@@ -320,20 +332,19 @@
             outline: 1px solid #1E1C1C;
         }
 
-        .curr-page:hover{
+        .curr-page:hover {
             outline: 1px solid #1E1C1C;
         }
 
-        .sidebar{
+        .sidebar {
             width: 40vw;
             padding: 0 2vw;
         }
 
-        .sidebar a{
+        .sidebar a {
             font-size: 5vw;
             padding: 1vh 3vw;
             margin: .5vh 0;
         }
-        
-    }
 
+    }
