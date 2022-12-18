@@ -161,3 +161,50 @@ footer {
     filter: blur(0.65px);
     -webkit-filter: blur(0.65px);
 } */
+
+@media only screen and (max-width:750px) {
+    #advisory-section > #team-subcontainer1,#advisory-section > #team-subcontainer{
+        min-width: 48%;
+        height: 43vw;
+        border: solid#1E1C1C 0.1vw;
+    }
+
+    #advisory-section{
+        flex-wrap: wrap-reverse;
+    }
+
+    #heading{
+        font-size: 7.2vw;
+        text-align: center;
+    }
+    #profile{
+        min-width: 20vw;
+        height: 20vw;
+    }
+    #profile1{
+        min-width: 23vw;
+        height: 23vw;
+    }
+    #social-icons{
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+    footer{
+        height: 10vw;
+        max-width: 100%;
+    }
+
+    #team-subcontainer1 > h3{
+        font-size: 4vw;
+    }
+    #team-subcontainer1 > h5{
+        font-size: 2.5vw;
+    }
+    #supported-section > img{
+        min-width: 20vw;
+        height: 20vw;
+    }
+    #footer-text{
+        font-size: 2.3vw;
+    }
+}
