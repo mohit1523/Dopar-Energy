@@ -8,11 +8,6 @@
     font-family: 'Rajdhani', sans-serif;
 }
 
-*::selection{
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-
 /* :root {
     --primary-color: #1E1C1C;
     --secondary-color: #81D959;
@@ -32,7 +27,7 @@ body {
     align-items: center;
 }
 
-.introVid>video {
+.introVid > video {
     margin: auto;
     width: 70vw;
 }
@@ -46,13 +41,13 @@ body {
     color: #FFFDFA;
 }
 
-.intro-section>h1 {
+.intro-section > h1{
     font-size: 8vw;
     padding: 4vh 0;
     text-align: center;
 }
 
-.intro-section>h4 {
+.intro-section > h4{
     font-size: 2vw;
     text-align: center;
     padding: 2vh 0;
@@ -65,7 +60,7 @@ body {
 
 .product-section {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     background-color: #1E1C1C;
     padding: 15vh 2vw;
@@ -157,7 +152,6 @@ body {
     font-size: 4vw;
     position: relative;
     padding: 2vh 2vw;
-    width: fit-content;
     font-family: 'Felix Titling' , cursive;
     background-color: #FFFDFA;
     color: #81D959;
@@ -171,7 +165,7 @@ body {
 }
 
 .sub-heading{
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .range-box{
@@ -184,17 +178,16 @@ body {
 
 .range-box::before{
     content: '';
-    border-radius: 10vw 0 0 10vw;
     position: absolute;
     top: 0;
     left: 0;
-    width: 2%;
+    width: 1%;
     height: 100%;
     background-color: #81D959;
 }   
 
 .specTit{
-    font-size: 2.5vw;
+    font-size: 2vw;
 }
 
 .specsList li{
@@ -235,7 +228,7 @@ body {
 }
 
 .features-section > div{
-    width: 40vw;
+    width: 50vw;
 }
 
 .specsList2{
@@ -262,6 +255,7 @@ body {
 .product-details2 a{
     text-decoration: none;
     color: #1E1C1C;
+    font-size: 1.5vw;
     font-weight: 900;
     display: block;
     margin: 5vh 0;
@@ -284,10 +278,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    overflow: hidden;
 }
 
 .product-images > div > div{
+    overflow: hidden;
     width: 30%;
 }
 
@@ -309,7 +303,7 @@ body {
 .faqs{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #1E1C1C;
     clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
     padding: 20vh 0;
@@ -400,6 +394,10 @@ footer{
     justify-content: space-between;
 }
 
+.copyright{
+    font-size: 1vw;
+}
+
 footer img {
     height: 5vh;
     margin: 0 1vw;
@@ -413,3 +411,60 @@ footer img:hover{
 
 /* CODE FOR RESPONSIVENESS */
 
+
+@media screen and (max-width:650px) {
+    
+    .introVid > video{
+        width: 100vw;
+    }
+
+    .intro-section > h1{
+        font-size: 12vw;
+        padding: 2vh 0;
+    }
+
+    .intro-section > h4{
+        font-size: 4vw;
+    }
+
+    .product-section{
+        padding: 10vh 2vw;
+    }
+
+    .features-section{
+        flex-direction: column  ;
+    }
+
+    .features-section > div{
+        width: 90vw;
+    }
+
+    .product-details2 a{
+        margin: 2vh 0;
+    }
+
+    .faqs{
+        flex-direction: column;
+        padding: 20vh 0 12vh 0;
+    }
+
+    .questions > details{
+        width: 90vw;
+    }
+
+    .about-sec{
+        padding: 2vh 0;
+    }
+
+    .about1{
+        padding: 2vh 2vw;
+    }
+
+    footer{
+        padding: 1vh 3vw;
+    }
+
+    footer img{
+        height: 3vh;
+    }
+}
