@@ -441,6 +441,7 @@ footer img:hover{
 
     .product-details2 a{
         margin: 2vh 0;
+        width: fit-content;
     }
 
     .faqs{
