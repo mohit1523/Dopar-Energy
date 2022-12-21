@@ -16,8 +16,16 @@ body{
     background-color: #1E1C1C;
 }
 
+.datasheet-title > h1{
+    font-family: 'Felix Titling';
+    color: #FFFDFA;
+    padding: 3vh 20vw 0 20vw;
+    font-size: 3vw;
+    text-align: center;
+}
+
 section{
-    height: 90vh;
+    height: 93vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -30,7 +38,8 @@ section::before{
     position: absolute;
     height: 100vh;
     width: 200vw;
-    bottom: -65%;
+    right: -100%;
+    bottom: -40%;
     z-index: -2;
     transform: rotate(-20deg);
     background: #FFFDFA;
@@ -194,11 +203,11 @@ input[type="submit"]:hover{
     }
 
     input{
-        height: 3vh;
+        height: 3vw;
     }
 
     input::placeholder , textarea{
-        font-size: 2vh;
+        font-size: 2vw;
     }
 
     textarea{
