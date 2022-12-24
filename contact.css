@@ -1,3 +1,8 @@
+/* IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,10 +14,11 @@ body{
 }
 
 .datasheet-title > h1{
-    font-family: 'Felix Titling';
+    font-family: 'Righteous', cursive;
     color: #FFFDFA;
     padding: 3vh 20vw 0 20vw;
     font-size: 3vw;
+    font-weight: 200;
     text-align: center;
 }
 
@@ -54,8 +60,8 @@ input{
 .conform > h1 , .conInfo > h1{
     font-size: 3vw;
     margin-bottom: 3vh;
-    font-family: 'felix titling' , cursive;
-    font-weight: 900;
+    font-family: 'Righteous', cursive;
+    font-weight: 200;
 }
 
 .conform option{
@@ -64,7 +70,7 @@ input{
 
 input,textarea{
     width: 100%;
-    padding: 5px 5px;
+    padding: 1vh 1vw;
     margin-bottom: 2vh;
     border: 1px solid #1E1C1C;
     border-radius: .5vw;
@@ -98,7 +104,6 @@ input[type="submit"]:hover{
     box-shadow: 1px 1px 4px black;
     cursor: pointer;
 }
-
 
 
 /* CODE FOR LINKS AND CONTACT DETAILS */
@@ -172,6 +177,10 @@ input[type="submit"]:hover{
 /* CODE FOR RESPONSIVENESS */
 
 @media screen and (max-width:650px) {
+
+    .datasheet-title > h1{
+        font-size: 4vw;
+    }
 
     .contact{
         flex-direction: column;
